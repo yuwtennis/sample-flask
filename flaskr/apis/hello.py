@@ -3,7 +3,7 @@ from flask import Blueprint
 bp = Blueprint( 'hello', __name__, url_prefix='/hello' )
 
 """
-GET /
+GET /hello
 
 A api that returns 'Hello World!' when it is accessed to root directory.
 """

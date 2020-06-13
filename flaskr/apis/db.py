@@ -3,9 +3,9 @@ from flask import Blueprint
 bp = Blueprint( 'db', __name__, url_prefix='/db' )
 
 """
-GET /
+GET /db/list
 
-A api that returns 'Hello World!' when it is accessed to root directory.
+A api that returns rows from table
 """
 @bp.route('/list')
 def hello_world():
