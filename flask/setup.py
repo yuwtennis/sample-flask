@@ -10,5 +10,5 @@ setup(
     author='Yu Watanabe',
     packages=find_packages(),
     python_requires='>=3.5, <4',
-    install_requires=['Flask', 'waitress'],
+    install_requires=['Flask', 'gunicorn'],
 )

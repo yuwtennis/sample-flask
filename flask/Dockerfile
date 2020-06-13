@@ -23,4 +23,4 @@ ENV SECRET_KEY SOMEVALUE
 EXPOSE 8080
 
 # Run waitress when container start
-CMD /usr/bin/waitress-serve --call 'flaskr:deploy'
+CMD /usr/bin/gunicorn -w 4 -b 127.0.0.1:8080 flaskr:deploy
